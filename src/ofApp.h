@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "MSAPhysics3D.h"
+#include "ofxPostProcessing.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,6 +24,10 @@ class ofApp : public ofBaseApp{
     
     msa::physics::World3D physics;
     
+    ofLight light;
     
+    ofxPostProcessing post;
+    ofEasyCam cam;
+    ofMesh sph = ofMesh::sphere(1);
 		
 };
