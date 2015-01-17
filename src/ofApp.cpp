@@ -116,14 +116,7 @@ void ofApp::draw(){
     ofPopMatrix();
     post.end();
     
-    
-    ofDrawBitmapString(" FPS: " + ofToString(ofGetFrameRate(), 2)
-                       + " | Number of particles: " + ofToString(physics.numberOfParticles(), 2)
-                       + " | Number of springs: " + ofToString(physics.numberOfSprings(), 2)
-                       + " | Mouse Mass: " + ofToString(mouseNode.getMass(), 2)
-                       + "\nLook at source code keyPressed to see keyboard shortcuts"
-                       , 20, 15);
-    
+
 }
 
 //--------------------------------------------------------------
